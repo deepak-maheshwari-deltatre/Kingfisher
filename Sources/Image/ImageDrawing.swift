@@ -84,7 +84,9 @@ extension KingfisherWrapper where Base: KFCrossPlatformImage {
                       backgroundColor: KFCrossPlatformColor? = nil) -> KFCrossPlatformImage
     {
         guard let _ = cgImage else {
-            assertionFailure("[Kingfisher] Compositing Operation image only works for CG-based image.")
+            
+            
+            ("[Kingfisher] Compositing Operation image only works for CG-based image.")
             return base
         }
         
@@ -520,7 +522,7 @@ extension KingfisherWrapper where Base: KFCrossPlatformImage {
         #endif
 
         guard let imageRef = cgImage else {
-            assertionFailure("[Kingfisher] Decoding only works for CG-based image.")
+//             assertionFailure("[Kingfisher] Decoding only works for CG-based image.")
             return base
         }
 
